@@ -9,13 +9,13 @@ Simple file setup tool written in V language.
 ## Build
 
 ```bash
-v build main.v
+v .
 ```
 
 ## Run
 
 ```bash
-./main
+./garbanzo
 ```
 
 ## Usage
