@@ -11,6 +11,8 @@ enum Tokens {
 	Tire       // -
 	String     // string, starts with " and ends with "
 	As         // this will change basename, like a as b
+	Unknown    // unknown token(not wanted)
+	Eol        // end of line
 }
 
 pub struct Token {
