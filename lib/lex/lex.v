@@ -1,5 +1,28 @@
 module lex
 
-pub fn add(a int, b int) {
-	println(a + b)
+/*
+mydir:
+ - mysubdir:
+    - https://myurl.domain/file as myfile
+*/
+enum Tokens {
+	Identifier // any word
+	DoubleDot  // :
+	Tire       // -
+	String     // string, starts with " and ends with "
+	As         // this will change basename, like a as b
 }
+
+pub struct Token {
+	token  Tokens
+	ctx    string
+	line   int
+	column int
+}
+
+pub fn tokenize(ctx string) []Token {
+	mut tokens = []Token{}
+
+	return tokens
+}
+
